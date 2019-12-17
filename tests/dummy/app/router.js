@@ -7,5 +7,5 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function() {
-  this.mount("ember-quickstart-engine")
+  this.mount("sunlight-browser-engine", { path: "/" });
 });
