@@ -1,16 +1,18 @@
-<div class="bg-white absolute bottom-0 m-2 rounded-full shadow-2xl p-1 w-10 h-10 flex items-center justify-center">
-  ►
-</div>
-<div class="image bg-gray-400 flex-1 flex">
-  <img
-    alt="ok"
-    class="rounded-lg cursor-pointer"
-    src="https://i.scdn.co/image/2e3ccae12ef97d41a05af922330e11bc07cf1e94"
-  >
-</div>
-<div class="title text-gray-700">
-  Best of Latin Hits 2019
-</div>
-<div class="info text-gray-700 text-xs">
-  50 tracks - 166,009 fans
-</div>
+<LinkToExternal @route={{"album"}} @model={{this.id}}>
+  <div class="bg-white absolute bottom-0 m-2 rounded-full shadow-2xl p-1 w-10 h-10 flex items-center justify-center">
+    ►
+  </div>
+  <div class="image bg-gray-400 flex-1 flex">
+    <img
+      alt="ok"
+      class="rounded-lg cursor-pointer"
+      src={{this.image}}
+    >
+  </div>
+  <div class="title text-gray-700">
+    {{this.name}}
+  </div>
+  <div class="info text-gray-700 text-xs">
+    50 tracks - 166,009 fans
+  </div>
+</LinkToExternal>
